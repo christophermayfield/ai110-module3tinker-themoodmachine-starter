@@ -43,7 +43,7 @@ def train_ml_model(
     vectorizer = CountVectorizer()
     X = vectorizer.fit_transform(texts)
 
-    model = LogisticRegression(max_iter=1000)
+    model = LogisticRegression(max_iter=1000, class_weight='balanced')
     model.fit(X, labels)
 
     return vectorizer, model

@@ -106,8 +106,9 @@ class MoodAnalyzer:
             elif p < 0:
                 negative_hits.append(token)
 
-        # Sarcasm detection: if "absolutely" and "love" and negative words, penalize
-        if "absolutely" in tokens and "love" in tokens and negative_hits:
+        # Sarcasm detection: if sarcasm markers present with mixed signals, penalize
+        sarcasm_markers = {"oh", "wow", "totally", "absolutely", "so"}
+        if any(marker in tokens for marker in sarcasm_markers) and positive_hits and negative_hits:
             score -= 2  # Strong negative signal for sarcasm
 
         return {
