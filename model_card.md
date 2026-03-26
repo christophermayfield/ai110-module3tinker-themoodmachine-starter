@@ -150,7 +150,7 @@ Examples:
 
 -I would say that there are minimal ethical concerns with this model
 - The model doesn't have a directly negative consequence to the world 
--no inherent bias
+-no inherent bias in the model
 
 ## 8. Ideas for Improvement
 
@@ -163,3 +163,6 @@ Possible directions:
 - Use a small neural network or transformer model  
 - Improve the rule based scoring method  
 - Add a real test set instead of training accuracy only
+
+
+More data for success
