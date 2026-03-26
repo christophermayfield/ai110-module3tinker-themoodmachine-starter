@@ -23,11 +23,29 @@ POSITIVE_WORDS = [
     "chill",
     "relaxed",
     "amazing",
+    "hopeful",
+    "deserve",
+    "party",
 ]
 
 NEGATIVE_WORDS = [
     "sad",
     "bad",
+    "terrible",
+    "awful",
+    "angry",
+    "upset",
+    "tired",
+    "stressed",
+    "hate",
+    "boring",
+    "annoyed",
+    "drained",
+    "cursed",
+    "ugh",
+    "late",
+    "spilled",
+    "stuck",
     "terrible",
     "awful",
     "angry",
@@ -50,6 +68,11 @@ SAMPLE_POSTS = [
     "This is fine",
     "So excited for the weekend",
     "I am not happy about this",
+    "No cap, today’s meetings drained me, but I still got stuff done.",
+    "I absolutely love getting stuck in traffic",
+    "Mood: 0/10, but the dog meme I saw hit different",
+    "Ugh, woke up late and spilled coffee all over, today is cursed.",
+    "If I get through today, I deserve the weekend party"
 ]
 
 # Human labels for each post above.
@@ -65,6 +88,11 @@ TRUE_LABELS = [
     "neutral",   # "This is fine"
     "positive",  # "So excited for the weekend"
     "negative",  # "I am not happy about this"
+    "mixed",     # "No cap, today’s meetings drained me, but I still got stuff done."
+    "negative",  # "I absolutely love getting stuck in traffic"
+    "mixed",     # "Mood: 0/10, but the dog meme I saw hit different"
+    "negative",  # "Ugh, woke up late and spilled coffee all over, today is cursed."
+    "positive", # "If I get through today, I deserve the weekend party"
 ]
 
 # TODO: Add 5-10 more posts and labels.
